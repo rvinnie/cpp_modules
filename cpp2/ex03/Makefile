@@ -4,13 +4,13 @@ CFLAGS = -Wall -Wextra -Werror
 
 RM = rm -rf
 
-HDRS = Weapon.hpp HumanA.hpp HumanB.hpp
+HDRS = Fixed.hpp Point.hpp
 
-SRCS = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRCS = main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
-NAME = weapons
+NAME = fixed
 
 $(NAME):	$(OBJS) $(HDRS)
 	$(CC) $(OBJS) -o $@
