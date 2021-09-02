@@ -12,7 +12,7 @@ class ClapTrap {
 public:
 	ClapTrap(void);
 	ClapTrap(std::string name);
-	~ClapTrap(void);
+	virtual ~ClapTrap(void);
 	ClapTrap(ClapTrap const & other);
 	ClapTrap & operator=(ClapTrap const & other);
 	std::string	getName(void) const;
